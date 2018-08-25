@@ -11,3 +11,7 @@ it('should return 1 when calculate fibonacci(1)', () => {
 it('should return 1 when calculate fibonacci(2)', () => {
   expect(fibonacci(2)).toBe(1)
 })
+
+it('should return 2 when calculate fibonacci(3)', () => {
+  expect(fibonacci(3)).toBe(2)
+})
