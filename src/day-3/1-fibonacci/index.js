@@ -1,4 +1,4 @@
-const fibonacci = () => 0
+const fibonacci = () => 1
 
 module.exports = {
   fibonacci,
