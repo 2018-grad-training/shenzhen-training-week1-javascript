@@ -1,5 +1,8 @@
 const fibonacci = (number) => {
-  return number === 0 ? 0 : 1
+  if (number === 0) {
+    return 0
+  }
+  return 1
 }
 
 module.exports = {
