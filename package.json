@@ -7,7 +7,7 @@
     "precommit": "lint-staged",
     "lint": "eslint src --fix",
     "test": "jasmine JASMINE_CONFIG_PATH=jasmine.json",
-    "test:watch": "onchange 'src/**/*.test.js' -v -i -- npm test"
+    "test:watch": "onchange 'src/**/*.js' -v -i -- npm test"
   },
   "lint-staged": {
     "src/**/*.js": [
