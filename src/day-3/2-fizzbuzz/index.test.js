@@ -16,3 +16,7 @@ it('should say Fizz when saying fizzbuzz(3)', () => {
 it('should say 4 when saying fizzbuzz(4)', () => {
   expect(fizzbuzz.say(4)).toEqual('4')
 })
+
+it('should say Buzz when saying fizzbuzz(5)', () => {
+  expect(fizzbuzz.say(5)).toEqual('Buzz')
+})
