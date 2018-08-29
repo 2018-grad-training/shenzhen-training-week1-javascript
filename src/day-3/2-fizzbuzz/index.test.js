@@ -1,5 +1,10 @@
-const { fizzbuzz } = require('./index')
+const { FizzBuzz } = require('./index')
 
-it('should say nothing when saying fizzbuzz(0)', () => {
-  expect(fizzbuzz(0)).toEqual([])
+let fizzbuzz
+beforeEach(() => {
+  fizzbuzz = new FizzBuzz('1')
+})
+
+it('should say 1 when saying fizzbuzz(1)', () => {
+  expect(fizzbuzz.say(1)).toEqual('1')
 })

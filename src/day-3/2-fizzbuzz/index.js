@@ -1,5 +1,13 @@
-const fizzbuzz = () => []
+class FizzBuzz {
+  constructor(first) {
+    this.first = first
+  }
+
+  say() {
+    return this.first
+  }
+}
 
 module.exports = {
-  fizzbuzz,
+  FizzBuzz,
 }
