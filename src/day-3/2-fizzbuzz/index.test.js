@@ -28,3 +28,7 @@ it('should say Whizz when saying fizzbuzz(7)', () => {
 it('should say Buzz when saying fizzbuzz(10)', () => {
   expect(fizzbuzz.say(10)).toEqual('Buzz')
 })
+
+it('should say FizzBuzz when saying fizzbuzz(15) which is the multiple of 3 and 5', () => {
+  expect(fizzbuzz.say(15)).toEqual('FizzBuzz')
+})

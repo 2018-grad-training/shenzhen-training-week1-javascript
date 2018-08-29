@@ -6,12 +6,17 @@ class FizzBuzz {
   }
 
   say(number) {
+    let result = ''
     if (number % this.first === 0) {
-      return 'Fizz'
+      result = result.concat('Fizz')
     }
 
     if (number % this.second === 0) {
-      return 'Buzz'
+      result = result.concat('Buzz')
+    }
+
+    if (result.length) {
+      return result
     }
 
     if (number % this.third === 0) {
