@@ -37,10 +37,14 @@ it('should say FizzWhizz when saying fizzbuzz(21) which is the multiple of 3 and
   expect(fizzbuzz.say(21)).toEqual('FizzWhizz')
 })
 
-it('should say BuzzWhizz when saying fizzbuzz(35) which is the multiple of 5 and 7', () => {
-  expect(fizzbuzz.say(35)).toEqual('BuzzWhizz')
+it('should say BuzzWhizz when saying fizzbuzz(70) which is the multiple of 5 and 7', () => {
+  expect(fizzbuzz.say(70)).toEqual('BuzzWhizz')
 })
 
 it('should say FizzBuzzWhizz when saying fizzbuzz(105) which is the multiple of 3, 5 and 7', () => {
   expect(fizzbuzz.say(105)).toEqual('FizzBuzzWhizz')
+})
+
+it('should say Fizz when saying fizzbuzz(35) which contains the first special number and is can be multiplied by 5 * 7', () => {
+  expect(fizzbuzz.say(35)).toEqual('Fizz')
 })

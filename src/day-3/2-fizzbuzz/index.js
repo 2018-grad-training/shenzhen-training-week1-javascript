@@ -6,6 +6,10 @@ class FizzBuzz {
   }
 
   say(number) {
+    if (number.toString().includes(this.first)) {
+      return 'Fizz'
+    }
+
     let result = ''
     if (number % this.first === 0) {
       result = result.concat('Fizz')
