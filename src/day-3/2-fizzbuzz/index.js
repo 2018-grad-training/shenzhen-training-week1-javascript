@@ -4,7 +4,11 @@ class FizzBuzz {
   }
 
   say(number) {
-    return number === 1 ? this.first : 'Fizz'
+    if (number % this.first === 0) {
+      return 'Fizz'
+    }
+
+    return number.toString()
   }
 }
 
