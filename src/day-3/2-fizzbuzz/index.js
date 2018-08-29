@@ -3,8 +3,8 @@ class FizzBuzz {
     this.first = first
   }
 
-  say() {
-    return this.first
+  say(number) {
+    return number === 1 ? this.first : 'Fizz'
   }
 }
 

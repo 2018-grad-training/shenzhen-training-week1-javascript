@@ -8,3 +8,7 @@ beforeEach(() => {
 it('should say 1 when saying fizzbuzz(1)', () => {
   expect(fizzbuzz.say(1)).toEqual('1')
 })
+
+it('should say Fizz when saying fizzbuzz(3)', () => {
+  expect(fizzbuzz.say(3)).toEqual('Fizz')
+})
