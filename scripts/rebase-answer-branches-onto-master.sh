@@ -4,5 +4,6 @@
 branches=($(git branch | cat | grep --invert-match master | tr -d ' '))
 for branch in ${branches[@]}; do
   git rebase master ${branch}
-  git checkout master
 done
+
+git checkout master
