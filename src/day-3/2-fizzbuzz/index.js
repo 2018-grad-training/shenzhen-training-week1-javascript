@@ -15,12 +15,12 @@ class FizzBuzz {
       result = result.concat('Buzz')
     }
 
-    if (result.length) {
-      return result
+    if (number % this.third === 0) {
+      result = result.concat('Whizz')
     }
 
-    if (number % this.third === 0) {
-      return 'Whizz'
+    if (result.length) {
+      return result
     }
 
     return number.toString()
