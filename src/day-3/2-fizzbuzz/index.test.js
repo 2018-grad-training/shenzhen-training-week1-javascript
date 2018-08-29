@@ -2,7 +2,7 @@ const { FizzBuzz } = require('./index')
 
 let fizzbuzz
 beforeEach(() => {
-  fizzbuzz = new FizzBuzz(3, 5)
+  fizzbuzz = new FizzBuzz(3, 5, 7)
 })
 
 it('should say 1 when saying fizzbuzz(1)', () => {
@@ -19,6 +19,10 @@ it('should say 4 when saying fizzbuzz(4)', () => {
 
 it('should say Buzz when saying fizzbuzz(5)', () => {
   expect(fizzbuzz.say(5)).toEqual('Buzz')
+})
+
+it('should say Whizz when saying fizzbuzz(7)', () => {
+  expect(fizzbuzz.say(7)).toEqual('Whizz')
 })
 
 it('should say Buzz when saying fizzbuzz(10)', () => {
