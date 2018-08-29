@@ -1,6 +1,7 @@
 class FizzBuzz {
-  constructor(first) {
+  constructor(first, second) {
     this.first = first
+    this.second = second
   }
 
   say(number) {
@@ -8,7 +9,7 @@ class FizzBuzz {
       return 'Fizz'
     }
 
-    if (number % 5 === 0) {
+    if (number % this.second === 0) {
       return 'Buzz'
     }
 

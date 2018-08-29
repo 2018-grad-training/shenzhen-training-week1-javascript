@@ -2,7 +2,7 @@ const { FizzBuzz } = require('./index')
 
 let fizzbuzz
 beforeEach(() => {
-  fizzbuzz = new FizzBuzz(3)
+  fizzbuzz = new FizzBuzz(3, 5)
 })
 
 it('should say 1 when saying fizzbuzz(1)', () => {
