@@ -19,11 +19,7 @@ class FizzBuzz {
       result = result.concat('Whizz')
     }
 
-    if (result.length) {
-      return result
-    }
-
-    return number.toString()
+    return result || number.toString()
   }
 }
 
