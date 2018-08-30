@@ -6,7 +6,7 @@ const getResult = (words) => {
   const result = splitWords(words).reduce(
     (total, input) =>
       Object.assign(total, {
-        [input]: total.hasOwnProperty(input) ? total[input] + 1 : 1,
+        [input]: (total[input] || 0) + 1,
       }),
     {}
   )
