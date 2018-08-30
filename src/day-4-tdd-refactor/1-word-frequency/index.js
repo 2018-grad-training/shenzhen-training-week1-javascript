@@ -27,12 +27,9 @@ const getResult = (inputStr) => {
     .map((entry) => new Input(entry, map[entry].length))
     .sort((w1, w2) => w2.getWordCount() - w1.getWordCount())
 
-  const result = []
-  for (const w of list) {
-    result.push(`${w.getValue()} ${w.getWordCount()}`)
-  }
-
-  return result.join('\n')
+  return list
+    .map((item) => `${item.getValue()} ${item.getWordCount()}`)
+    .join('\n')
 }
 
 const getListMap = (inputList) => {
