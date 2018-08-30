@@ -19,7 +19,7 @@ const getResult = (inputStr) => {
   }
 
   const arr = inputStr.split(' ').filter((input) => input)
-  let inputList = []
+  const inputList = []
 
   for (const s of arr) {
     const input = new Input(s, 1)
@@ -34,11 +34,10 @@ const getResult = (inputStr) => {
     const input = new Input(entry, map[entry].length)
     list.push(input)
   }
-  inputList = list
-  inputList.sort((w1, w2) => w2.getWordCount() - w1.getWordCount())
+  const newList = list.sort((w1, w2) => w2.getWordCount() - w1.getWordCount())
 
   const result = []
-  for (const w of inputList) {
+  for (const w of newList) {
     result.push(`${w.getValue()} ${w.getWordCount()}`)
   }
 
