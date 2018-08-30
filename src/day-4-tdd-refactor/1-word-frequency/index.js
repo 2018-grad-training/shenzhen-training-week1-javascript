@@ -19,12 +19,7 @@ const getResult = (inputStr) => {
   }
 
   const arr = inputStr.split(' ').filter((input) => input)
-  const inputList = []
-
-  for (const s of arr) {
-    const input = new Input(s, 1)
-    inputList.push(input)
-  }
+  const inputList = arr.map((input) => new Input(input, 1))
 
   // get the map for the next step of sizing the same word
   const map = getListMap(inputList)
