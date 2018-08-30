@@ -18,9 +18,7 @@ const getResult = (words) => {
     .join('\n')
 }
 
-function splitWords(words) {
-  return words.split(' ').filter((input) => input)
-}
+const splitWords = (words) => words.split(' ').filter((input) => input)
 
 module.exports = {
   getResult,
