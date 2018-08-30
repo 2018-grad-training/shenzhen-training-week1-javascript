@@ -1,18 +1,3 @@
-class Input {
-  constructor(word, count) {
-    this.value = word
-    this.count = count
-  }
-
-  getValue() {
-    return this.value
-  }
-
-  getWordCount() {
-    return this.count
-  }
-}
-
 const getResult = (words) => {
   if (words.split(' ').length === 1) {
     return `${words} 1`
@@ -21,7 +6,7 @@ const getResult = (words) => {
   const inputList = words
     .split(' ')
     .filter((input) => input)
-    .map((input) => new Input(input, 1))
+    .map((input) => ({ value: input, count: 1 }))
 
   // get the map for the next step of sizing the same word
   const map = getListMap(inputList)
