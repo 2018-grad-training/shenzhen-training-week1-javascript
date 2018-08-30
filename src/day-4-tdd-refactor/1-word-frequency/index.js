@@ -28,8 +28,8 @@ const getResult = (words) => {
 
   return Object.keys(map)
     .map((entry) => ({ value: entry, count: map[entry].length }))
-    .sort((w1, w2) => w2.count - w1.count)
-    .map((item) => `${item.value} ${item.count}`)
+    .sort((one, another) => another.count - one.count)
+    .map(({ value, count }) => `${value} ${count}`)
     .join('\n')
 }
 
