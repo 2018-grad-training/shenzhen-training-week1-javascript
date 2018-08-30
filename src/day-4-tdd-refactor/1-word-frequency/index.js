@@ -23,12 +23,9 @@ const getResult = (inputStr) => {
 
   // get the map for the next step of sizing the same word
   const map = getListMap(inputList)
-  const list = []
-
-  for (const entry of Object.keys(map)) {
-    const input = new Input(entry, map[entry].length)
-    list.push(input)
-  }
+  const list = Object.keys(map).map(
+    (entry) => new Input(entry, map[entry].length)
+  )
   const newList = list.sort((w1, w2) => w2.getWordCount() - w1.getWordCount())
 
   const result = []
