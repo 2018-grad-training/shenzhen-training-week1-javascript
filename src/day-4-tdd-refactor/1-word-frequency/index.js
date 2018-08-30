@@ -28,20 +28,20 @@ const getResult = (words) => {
 
   return Object.keys(map)
     .map((entry) => new Input(entry, map[entry].length))
-    .sort((w1, w2) => w2.getWordCount() - w1.getWordCount())
-    .map((item) => `${item.getValue()} ${item.getWordCount()}`)
+    .sort((w1, w2) => w2.count - w1.count)
+    .map((item) => `${item.value} ${item.count}`)
     .join('\n')
 }
 
 const getListMap = (inputList) => {
   const map = {}
   for (const input of inputList) {
-    if (!map.hasOwnProperty(input.getValue())) {
+    if (!map.hasOwnProperty(input.value)) {
       const arr = []
       arr.push(input)
-      map[input.getValue()] = arr
+      map[input.value] = arr
     } else {
-      map[input.getValue()].push(input)
+      map[input.value].push(input)
     }
   }
 
