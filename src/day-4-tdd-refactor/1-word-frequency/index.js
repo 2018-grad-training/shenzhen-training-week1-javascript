@@ -1,7 +1,7 @@
 class Input {
-  constructor(w, i) {
-    this.value = w
-    this.count = i
+  constructor(word, count) {
+    this.value = word
+    this.count = count
   }
 
   getValue() {
