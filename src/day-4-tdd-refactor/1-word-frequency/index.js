@@ -11,7 +11,15 @@ const getResult = (words) => {
     {}
   )
 
-  return Object.keys(result)
+  return Object.keys(
+    splitWords(words).reduce(
+      (total, input) =>
+        Object.assign(total, {
+          [input]: (total[input] || 0) + 1,
+        }),
+      {}
+    )
+  )
     .map((item) => ({ word: item, counts: result[item] }))
     .sort((one, another) => another.counts - one.counts)
     .map(({ word, counts }) => `${word} ${counts}`)
