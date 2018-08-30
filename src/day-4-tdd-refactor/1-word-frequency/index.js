@@ -37,9 +37,7 @@ const getListMap = (inputList) => {
   const map = {}
   for (const input of inputList) {
     if (!map.hasOwnProperty(input.value)) {
-      const arr = []
-      arr.push(input)
-      map[input.value] = arr
+      map[input.value] = [input]
     } else {
       map[input.value].push(input)
     }
