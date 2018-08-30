@@ -8,6 +8,10 @@
   },
   "rules": {
     "prettier/prettier": "error",
-    "import/prefer-default-export": "off"
+    "import/prefer-default-export": "off",
+    "no-restricted-syntax": "off",
+    "no-use-before-define": "off",
+    "no-prototype-builtins": "off",
+    "no-else-return": "off"
   }
 }
