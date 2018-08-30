@@ -13,12 +13,12 @@ class Input {
   }
 }
 
-const getResult = (inputStr) => {
-  if (inputStr.split(' ').length === 1) {
-    return `${inputStr} 1`
+const getResult = (words) => {
+  if (words.split(' ').length === 1) {
+    return `${words} 1`
   }
 
-  const inputList = inputStr
+  const inputList = words
     .split(' ')
     .filter((input) => input)
     .map((input) => new Input(input, 1))
