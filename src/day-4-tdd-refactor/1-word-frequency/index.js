@@ -27,7 +27,7 @@ const getResult = (words) => {
   const map = getListMap(inputList)
 
   return Object.keys(map)
-    .map((entry) => new Input(entry, map[entry].length))
+    .map((entry) => ({ value: entry, count: map[entry].length }))
     .sort((w1, w2) => w2.count - w1.count)
     .map((item) => `${item.value} ${item.count}`)
     .join('\n')
