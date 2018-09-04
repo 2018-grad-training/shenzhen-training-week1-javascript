@@ -12,6 +12,7 @@
     "no-restricted-syntax": "off",
     "no-use-before-define": "off",
     "no-prototype-builtins": "off",
-    "no-else-return": "off"
+    "no-else-return": "off",
+    "arrow-body-style": "off"
   }
 }
