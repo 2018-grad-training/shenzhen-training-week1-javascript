@@ -13,6 +13,7 @@
     "no-use-before-define": "off",
     "no-prototype-builtins": "off",
     "no-else-return": "off",
-    "arrow-body-style": "off"
+    "arrow-body-style": "off",
+    "no-plusplus": "off"
   }
 }
